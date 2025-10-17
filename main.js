@@ -25,7 +25,7 @@ function switchTheme(event) {
         document.documentElement.style.setProperty('--border-color', '#14d5ef');
         document.documentElement.style.setProperty('--button-color', 'black');
         document.documentElement.style.setProperty('--button-border', '#f88741');
-        document.documentElement.style.setProperty('--back-image', 'url("resources/_graycheck-small.png")');
+        document.documentElement.style.setProperty('--back-image', 'url("/Resume/resources/_graycheck-small.png")');
         document.documentElement.style.setProperty('--primary-color', '#393636');
     } else {
         body.classList.remove('dark-mode');
