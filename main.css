@@ -252,5 +252,5 @@ input:checked+label+.dark-mode {
 }
 
 .gallery img:hover {
-    transform: scale(5);
+    transform: scale(3);
 }
