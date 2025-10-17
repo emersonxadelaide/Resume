@@ -1,15 +1,4 @@
-// const toggleSwitch = document.querySelector('.toggle-switch');
-// const body = document.querySelector('body');
 
-// toggleSwitch.addEventListener('change', switchTheme);
-
-// function switchTheme(event) {
-//     if (event.target.checked) {
-//         body.classList.add('dark-mode');
-//     } else {
-//         body.classList.remove('dark-mode');
-//     }
-// }
 
 const toggleSwitch = document.getElementById('toggle-switch');
 const body = document.querySelector('body');
