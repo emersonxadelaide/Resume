@@ -37,12 +37,14 @@ body {
 
 header {
     display: flex;
-    position: relative;
+    position: sticky;
+    top: 0;
     background-color: var(--card-color);
     border: var(--border-color) 4px;
     border-radius: 25px;
     box-shadow: 10px 10px 3px -2px var(--border-color);
     margin: 10px;
+    z-index:10;
 }
 
 #about li {
@@ -144,7 +146,7 @@ input:checked+label+.dark-mode {
     top: -25px;
     left: -20px;
     width: 250px;
-    z-index: 10;
+    z-index: 9;
 }
 
 .card-sections {
