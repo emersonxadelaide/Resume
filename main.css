@@ -236,11 +236,12 @@ input:checked+label+.dark-mode {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
 }
 
 .gallery img {
