@@ -1,0 +1,302 @@
+:root {
+    --primary-color: #14d5ef;
+    --text-color: black;
+    /*--back-image: url("resources/bluecheck.png");*/
+    --card-color: rgba(255, 246, 234, 1);
+    --border-color: #000;
+    --button-color: #f88741;
+    --button-border: black;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+ul {
+    font-size: 25px;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Lexend Mega', sans-serif;
+    /*background-image: var(--back-image);*/
+}
+
+#resume li {
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /*position: relative;*/
+    background-color: var(--card-color);
+    border: var(--border-color) 4px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 3px -2px var(--border-color);
+    margin: 10px;
+}
+
+#about li {
+    font-size: 25px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -20px;
+    font-size: 25px;
+}
+
+#name {
+    font-size: 25px;
+    font-weight: 500px;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-left: 10px;
+    vertical-align: center;
+}
+
+.header-button {
+    margin-left: 20px;
+    border: var(--button-border) solid 3px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px -2px var(--button-border);
+    vertical-align: middle;
+    padding: 10px;
+    background-color: var(--button-color);
+}
+
+.header-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-button:hover {
+    background-color: aqua;
+    color: #000000;
+    padding: 8px;
+    box-shadow: 4px 4px 0px -2px var(--button-border);
+}
+
+label {
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    background: skyblue;
+    border: solid black 4px;
+    border-radius: 25px;
+    box-shadow: inset opx 5px rgba(0, 0, 0, 0.4), inset 0px -px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: linear-gradient(180deg, #fef102, #d8790c);
+    border-radius: 20px;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked+label {
+    background-color: midnightblue;
+    border: solid white 2px;
+}
+
+input:checked+label:after {
+    left: calc(100%- 35px);
+    background: linear-gradient(180deg, #eaead6, #d8d86f);
+    transform: translatex(35px);
+}
+
+label:active:after {
+    width: 35px;
+}
+
+input:checked+label+.dark-mode {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Lexend Mega', sans-serif;
+    background-image: var(--back-image);
+}
+
+#polaroid {
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 250px;
+    z-index: 9;
+}
+
+.card-sections {
+    display: flex;
+    justify-content: center;
+}
+
+.card-sections li {
+    list-style-type: disc;
+}
+
+.card {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 200px;
+    background-color: var(--card-color);
+    border: solid var(--border-color) 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -2px var(--border-color);
+    text-align: center;
+    padding: 25px;
+}
+
+.card:hover {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 200px;
+    background-color: #f88741;
+    border: solid #000 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -20px #000;
+    color: #000;
+    text-align: center;
+    padding: 25px;
+}
+
+#about {
+    margin-top: 100px;
+}
+
+#experience {
+    max-width: 360px;
+}
+
+.card ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card li {
+    font-size: 20px;
+}
+
+.scrollDown {
+    margin-top: 2000px;
+}
+
+#Heidi {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resume-section {
+    margin: 20px auto;
+    padding: 20px;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.resume-section h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.resume-section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume-section ul {
+    list-style: disc inside;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.resume-section li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 2px;
+    margin: 25px 0;
+}
+
+.card-gallery {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 100px;
+    background-color: var(--card-color);
+    border: solid var(--border-color) 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -2px var(--border-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.card-gallery:hover {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 100px;
+    background-color: #f88741;
+    border: solid #000 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -10px #000;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 15vw;
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.gallery img:hover {
+    transform: scale(3);
+    border: solid #000000 2px;
+}
