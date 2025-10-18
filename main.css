@@ -167,7 +167,7 @@ input:checked+label+.dark-mode {
     background-color: var(--card-color);
     border: solid var(--border-color) 8px;
     border-radius: 25px;
-    box-shadow: 15px 15px 4px -2px var(--border-color);
+    box-shadow: 15px 15px 2px -2px var(--border-color);
     text-align: center;
     padding: 25px;
 }
@@ -180,7 +180,7 @@ input:checked+label+.dark-mode {
     background-color: #f88741;
     border: solid #000 8px;
     border-radius: 25px;
-    box-shadow: 15px 15px 4px -20px #000;
+    box-shadow: 15px 15px 4px -10px #000;
     color: #000;
     text-align: center;
     padding: 25px;
