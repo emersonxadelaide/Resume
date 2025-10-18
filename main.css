@@ -1,7 +1,7 @@
 :root {
-    --Primary-color: white;
+    --Primary-color: #14d5ef;
     --text-color: black;
-    --back-image: url("resources/bluecheck.png");
+    /*--back-image: url("resources/bluecheck.png");*/
     --card-color: rgba(255, 246, 234, 1);
     --border-color: #000;
     --button-color: #f88741;
@@ -160,19 +160,32 @@ input:checked+label+.dark-mode {
 
 .card {
     position: relative;
-    width: 80%;
+    width: 65%;
     margin-left: 10px;
-    margin-top: 100px;
+    margin-top: 200px;
     background-color: var(--card-color);
-    border: solid var(--border-color) 4px;
+    border: solid var(--border-color) 8px;
     border-radius: 25px;
-    box-shadow: 10px 10px 4px -2px var(--border-color);
+    box-shadow: 15px 15px 4px -2px var(--border-color);
     text-align: center;
-    padding: 45px;
+    padding: 25px;
 }
 
+.card:hover {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 200px;
+    background-color: #f88741;
+    border: solid #000 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -20px #000;
+    color: #000;
+    text-align: center;
+    padding: 25px;
+
 #about {
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 #experience {
@@ -237,6 +250,33 @@ input:checked+label+.dark-mode {
     margin: 25px 0;
 }
 
+    .card-gallery {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 100px;
+    background-color: var(--card-color);
+    border: solid var(--border-color) 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -2px var(--border-color);
+    text-align: center;
+    padding: 10px;
+}
+
+    card-gallery:hover {
+    position: relative;
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 100px;
+    background-color: #f88741;
+    border: solid #000 8px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 4px -10px #000;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -255,4 +295,5 @@ input:checked+label+.dark-mode {
 
 .gallery img:hover {
     transform: scale(3);
+    border: solid #000 2px;
 }
